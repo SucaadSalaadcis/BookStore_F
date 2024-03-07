@@ -53,7 +53,7 @@ function UploadBooks() {
    console.log(bookObj);
 
    // send data to the database
-   fetch("http://localhost:3000/upload_book",{
+   fetch("https://book-b.onrender.com/upload_book",{
     method: "POST",
     headers: {
       "Content-Type": "application/json",

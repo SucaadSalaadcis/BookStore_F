@@ -59,7 +59,7 @@ function EditBooks() {
 
   // update book data
  
-  fetch(`http://localhost:3000/book/${id}`, {
+  fetch(`https://book-b.onrender.com/book/${id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",

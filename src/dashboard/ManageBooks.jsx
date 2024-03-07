@@ -14,11 +14,11 @@ function ManageBooks() {
   const [allBooks, setAllBooks] = useState([]);
 
   useEffect(()=> {
-    fetch("http://localhost:3000/all_books").then(res => res.json()).then(data => setAllBooks(data));
+    fetch("https://book-b.onrender.com/all_books").then(res => res.json()).then(data => setAllBooks(data));
   });
   
   const handleDelete = (id) => {
-    fetch(`http://localhost:3000/book/${id}`, {
+    fetch(`https://book-b.onrender.com/book/${id}`, {
       method: "DELETE",
     }).then(res => res.json()).then(() => toast.success("Book Deleted Successfully...", {
       position: "top-right"
